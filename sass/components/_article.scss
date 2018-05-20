@@ -1,0 +1,71 @@
+.article {
+    display: flex;
+    justify-content: center;
+   
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    @include respond(phone){
+       height: 70vh;
+    }
+    &__image{
+        flex-grow: 1;
+        min-width: 0;
+        min-height: 0;
+        align-self: stretch;
+
+        @include respond(tab-land){
+            align-self: center;
+            // margin-top: 3rem;
+        }
+
+      
+        @include respond(phone){
+            align-self: center;
+            margin-top: 3rem;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &__text{
+        flex-grow: 2;
+       align-self: flex-start;
+       padding: 0 0 0 4rem;
+
+       @include respond(tab-port){
+        align-self: center;
+        
+       
+    }
+
+
+       @include respond(tab-land){
+        align-self: center;
+        flex-grow: 3;
+     
+    }
+
+       @include respond(phone){
+        align-self: center;
+        flex-grow: 3;
+    }
+  
+        &__para{
+            line-height: 1.8;
+            font-size: 1.6rem;
+
+            @include respond(tab-port){
+                line-height: 1.6;
+                font-size: 1.4rem;
+            }
+
+            @include respond(phone){
+                line-height: 1.2;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

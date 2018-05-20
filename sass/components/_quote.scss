@@ -1,0 +1,32 @@
+.quote{
+    height: 100vh;
+   margin: 0 auto;
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  justify-content: center;
+    &__heading{
+        align-self: flex-start;
+        &__header{
+            font-size: 4.5rem;
+            line-height: 90%;
+            &--simplicity {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__paragraph {
+
+        &__para{
+            line-height: 1.8;
+            font-size: 1.6rem;
+        }
+
+        &__sig {
+            font-size: 1.6rem;
+            color: #bab8b8;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+:root {
+
+    --color-primary: #00ff9c;
+    --color-secondary: #ff7730;
+   
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light: #525252;
+    --color-grey: #333333;
+    --color-grey-dark: #2C2C2C;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.6);
+  
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after { 
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: var(--color-grey-light);
+    @include respond(tab-land) { 
+        font-size: 56.25%; 
+    }
+
+    @include respond(tab-port) { 
+        font-size: 50%; 
+    }
+
+    @include respond(big-desk) {
+        font-size: 75%; 
+    }
+}
+
+body {
+    font-family: 'RobotoBlack', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    //min-height: 100vh;  
+}
+
+@media screen and (max-width: 480px) {
+   body {
+       width: 100%;
+   }
+
+   .article {
+       margin-top: 10rem !important;
+   }
+
+  
+}
